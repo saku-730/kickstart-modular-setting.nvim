@@ -45,4 +45,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- control buffer
+vim.keymap.set('n', '<C-j>', ':bprev<CR>', { noremap = true, silent = true }) -- change next buffer
+vim.keymap.set('n', '<C-k>', ':bnext<CR>', { noremap = true, silent = true }) -- change back buffer
+vim.keymap.set('n', '<C-q>', ':bd|vs|Fern . -drawer -reveal=%<CR>', { noremap = true, silent = true }) -- delete buffer(vs:save vs)
+
 -- vim: ts=2 sts=2 sw=2 et

@@ -77,6 +77,8 @@ require('lazy').setup({
 
   require 'plugins/bufferline', --buffer bar
 
+  --require 'plugins/vim-wintabs', --buffer bar
+
   require 'plugins/gitsigns', --git change sign
 
   require 'plugins/markdown-preview', --markdown preiview with brouse
